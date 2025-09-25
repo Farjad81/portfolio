@@ -1,0 +1,30 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 5rem;
+    height: 7rem;
+    background-color: #ffffffc9;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 15px;
+    animation-delay: 2ms;
+}
+.body:hover{
+    cursor: pointer;
+    animation: HoverAnimation 0.3s forwards;
+}
+@keyframes HoverAnimation {
+    from{
+        width: 5rem;
+        height: 7rem;
+        font-size: 14px;
+    }to{
+        transform: scale(1.1);
+        background-color: #704cdee3;
+        font-size: 15px;
+    }
+}

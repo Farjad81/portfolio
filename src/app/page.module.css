@@ -1,0 +1,108 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 8px;
+}
+.header{
+  width: 6rem;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 15px;
+  align-items: center;
+  background-color: #0b2f9fe3;
+  border-radius: 8px;
+  transform: translate(-2px);
+  color: white;
+  font-weight: 600;
+}
+.headerA{
+  cursor: pointer;
+
+}
+.headerA:hover{
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+}
+
+.fixCard{
+  width: 24rem;
+  height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #0B2F9F;
+}
+.fixCard_image{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixCard_content{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.animatedCard{
+  width: 30rem;
+  height: 24rem;
+}
+.fixCard_h1{
+  animation: jumpAnimation 2s infinite;
+  color: #C7FFD8;
+}
+.logos{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.buttons{
+  width: 100%;
+  height: 3rem;
+  display: flex;
+}
+.button{
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #C7FFD8;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: #704cdece;
+}
+.animatedCard{
+  width: 20rem;
+  height: 24rem;
+}
+@keyframes jumpAnimation {
+  0%{
+    transform: translateY(0px);
+  }25%{
+    transform: translateY(-10px);
+  }50%{
+    transform: translateY(0px);
+  }75%{
+    transform: translateY(-10px);
+  }100%{
+    transform: translateY(0px);
+  }
+}
