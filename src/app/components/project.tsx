@@ -1,9 +1,12 @@
+'use client';
 import styles from '@/app/components/styles/project.module.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-AOS.init();
 export default function Project (){
+         useEffect(()=>{
+            AOS.init();
+        })
     return(
         <>
         <div className={styles.container}  data-aos="fade-down"data-aos-offset="300"
