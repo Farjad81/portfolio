@@ -1,6 +1,7 @@
 'use client';
 import styles from '@/app/components/styles/project.module.css';
 import AOS from 'aos';
+import { useEffect } from "react";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 export default function Project (){
