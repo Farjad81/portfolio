@@ -1,9 +1,13 @@
+'use client';
+import { useEffect } from "react";
 import styles from "@/app/components/styles/about.module.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-AOS.init();
 export default function About(){
+      useEffect(() => {
+    AOS.init();
+  }, []);
     return(
         <>
             <div className={styles.main} data-aos="fade-down"data-aos-offset="300"
