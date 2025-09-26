@@ -1,3 +1,4 @@
+"use client";
 import styles from "@/app/components/styles/connect.module.css"
 import { useState } from 'react';
 export default function Connect(){
