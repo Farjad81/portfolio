@@ -12,9 +12,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 export default function Home() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
+    AOS.init();
   }, []);
   const [selected, setSelected] = useState<'about' | 'skills' | 'project' | 'connect' |null>(null);
   return (
