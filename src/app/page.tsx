@@ -6,12 +6,16 @@ import About from "@/app/components/about";
 import Skills from "@/app/components/skills";
 import Project from "@/app/components/project";
 import Connect from "./components/connect";
-
+import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-AOS.init();
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const [selected, setSelected] = useState<'about' | 'skills' | 'project' | 'connect' |null>(null);
   return (
     <>
